@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+  function deleteNumberFromArray(arr,index){
+    if(index<0 && index>arr.length){
+        return arr;
+    }
+    else {
+            let newArr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (i !== index) {
+                    newArr.push(arr[i])
+                }
+            }
+            return newArr;
+        }
+  }
+  let arr = [2,5,9,7,9,5,6,8,10];
+  let index = 5;
+  deleteNumberFromArray(arr,index);
+  console.log(deleteNumberFromArray(arr,index));
+</script>
+</body>
+</html>
