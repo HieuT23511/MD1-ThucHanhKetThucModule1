@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+    // Sap xep mang theo thu tu tu lon den be
     function findMax(arr) {
         for (let i = 0; i < arr.length; i++) {
             for (let j = 0; j < arr.length; j++) {
@@ -16,9 +17,18 @@
                 }
             }
         }
+        // Sap xep lai mang tren loai bo cac phan tu trung nhau.
+        let arr1 =[];
+        for (let k = 0; k < arr.length; k++) {
+            if(arr1.indexOf(arr[k])===-1){
+                arr1.push(arr[k])
+            }
+        }
+        return arr1[1];
     }
-
-
+    let arrPoint = [2,5,9,7,9,5,6,8,10];
+    findMax(arrPoint);
+    document.write(`Diem thi lon thu hai trong mang la: ${findMax(arrPoint)}`);
 </script>
 </body>
 </html>
