@@ -10,17 +10,17 @@
         let a = 0;
         let b = 1;
         let temp;
-        let total=1
-        for (let i = 0; i < x - 2; i++) {
+        let total=0
+        for (let i = 0; i <=x; i++) {
+            total += a
             temp = +(a +b);
             a = + b;
             b = + temp;
-            total += temp
+
         }
         return `tong cua day so tren la : ${total}`
     }
-    //
-    console.log(sumOfListFibonacy(5))
+    document.write(sumOfListFibonacy(5))
 </script>
 </body>
 </html>
