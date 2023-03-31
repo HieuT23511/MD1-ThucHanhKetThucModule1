@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3 - Fibonacy</title>
+</head>
+<body>
+<script>
+    function sumOfListFibonacy(x) {
+        let a = 0;
+        let b = 1;
+        let temp;
+        let total=1
+        for (let i = 0; i < x - 2; i++) {
+            temp = +(a +b);
+            a = + b;
+            b = + temp;
+            total += temp
+        }
+        return `tong cua day so tren la : ${total}`
+    }
+    //
+    console.log(sumOfListFibonacy(5))
+</script>
+</body>
+</html>
